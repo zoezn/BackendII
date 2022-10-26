@@ -1,0 +1,17 @@
+spring:
+  application:
+    name: dh-maquinaria-usuario
+  cloud:
+    config:
+      url: ${CONFIG_SERVER:http://localhost:8888}
+
+server:
+  port: ${PORT:9999}
+
+message: "Service for usuario is alive!"
+
+max_login_fail: 3
+domain_mail_enabled:
+  -"@outlook.com"
+  -"@gmail.com"
+  -"@digitalhouse.com"
