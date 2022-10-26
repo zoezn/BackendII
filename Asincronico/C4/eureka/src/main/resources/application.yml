@@ -1,0 +1,28 @@
+#server.port=8761
+#
+#eureka.client.register-with-eureka=false
+#eureka.client.fetch-registry=false
+#
+#management.endpoints.web.exposure.include=*
+#management.info.env.enabled = true
+
+spring:
+    application:
+        name: api-eurekaserver-ms
+
+server:
+    port: 8761
+
+eureka:
+    instance:
+        hostname: localhost
+    client:
+        registerWithEureka: false
+        fetchRegistry: false
+        serviceUrl:
+            defaultZone: http://${eureka.instance.hostname}:${server.port}/eureka/
+
+management:
+    info:
+        env:
+            enabled: true
