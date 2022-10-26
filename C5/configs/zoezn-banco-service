@@ -1,0 +1,19 @@
+spring:
+  application:
+    name: zoezn-banco-service
+  cloud:
+    config:
+      url: ${CONFIG_SERVER:http://localhost:8888}
+
+server:
+  port: ${PORT:9999}
+
+message: "Service for banco is alive!"
+
+
+max_efectivo: 2000.00
+denominaciones_billetes: 
+  - "10"
+  - "20"
+  - "30"
+  - "40"
