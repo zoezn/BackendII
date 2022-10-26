@@ -1,6 +1,6 @@
 spring:
   application:
-    name: dh-maquinaria-usuario-service
+    name: dh-maquinaria-usuario
   cloud:
     config:
       uri: ${CONFIG_SERVER:http://localhost:8888}
